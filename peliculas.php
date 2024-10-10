@@ -37,16 +37,14 @@
 <main class="container">
 <img src="imagenes/peliculas_portada.jpg" class="rounded-circle mx-auto d-block" alt="...">
     <div class="row">
-        <h1 class="text-center"></h1>
-
         <?php foreach($categorias as $producto) { ?>
             <div class="col-4 mt-4 mb-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/<?=$producto['imagen'];?>" class="card-img-top" alt="">
+                        <img src="imagenes/<?=$producto['imagen'];?>" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="card-title"><?=$producto['titulo'];?></h5>
+                            <h5 class="card-title text-center"><?=$producto['titulo'];?></h5>
                             <h5 class="cart-title text-succes"><?=$producto['episodio'];?></h5>
-                            <a href="producto_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>" class="btn btn-primary">Ver</a>
+                            <a href="pelicula_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>" class="btn btn-primary">Ver</a>
                         </div>
 
                     </div>
