@@ -10,6 +10,11 @@ body {
     background-color: #F7EED3;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 footer{
     background-color: #AAB396;
 }

@@ -18,7 +18,7 @@
   <header>
   <nav class="navbar d-flex justify-content-evenly">
     <a href="index.php" class="navbar-brand">INICIO</a>
-    <a href="#" class="navbar-brand">PELICULAS</a>
+    <a href="peliculas.php" class="navbar-brand">PELICULAS</a>
     <a href="#" class="navbar-brand">PERSONAJES</a>
     <a href="#" class="navbar-brand">NAVES</a>
     <a href="#" class="navbar-brand">SABLES</a>
