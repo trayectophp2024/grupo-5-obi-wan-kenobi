@@ -18,10 +18,10 @@
   <header>
   <nav class="navbar d-flex justify-content-evenly">
     <a href="index.php" class="navbar-brand">INICIO</a>
-    <a href="peliculas.php" class="navbar-brand">PELICULAS</a>
-    <a href="#" class="navbar-brand">PERSONAJES</a>
-    <a href="#" class="navbar-brand">NAVES</a>
-    <a href="#" class="navbar-brand">SABLES</a>
+    <a href="peliculas.php?categoria=peliculas" class="navbar-brand">PELICULAS</a>
+    <a href="personajes.php?categoria=personajes" class="navbar-brand">PERSONAJES</a>
+    <a href="naves.php?categoria=naves" class="navbar-brand">NAVES</a>
+    <a href="sables.php?categoria=sables" class="navbar-brand">SABLES</a>
 
     <div class="container-fluid d-flex justify-content-center">
     <form class="d-flex" role="search">
