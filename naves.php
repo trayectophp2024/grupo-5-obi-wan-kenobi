@@ -39,16 +39,15 @@
     <div class="row">
         <?php foreach($categorias as $producto) { ?>
             <div class="col-4 mt-4 mb-4">
+            <a href="naves_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>">
                     <div class="card" style="width: 18rem;">
                         <img src="imagenes/<?=$producto['imagen'];?>" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title text-center"><?=$producto['nombre'];?></h5>
-                            <a href="producto_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>" class="btn btn-primary">Ver</a>
                         </div>
-
                     </div>
+                    </a>
                 </div>
-
         <?php } ?>
     </div>
 

@@ -20,15 +20,15 @@ $producto = $productos[0] ?? NULL;
 
 <?php require "partials/header.php" ?>
 
-<img src="imagenes/peliculas_portada.jpg" class="rounded-circle mx-auto d-block" alt="...">
+<img width="150px" src="imagenes/nave-logo.png" class="rounded-circle mx-auto d-block" alt="...">
 
   <div class="d-flex mb-3">
     <div class="me-auto p-2">
-      <img width="300px" src="imagenes/<?=$producto['imagen']?>" alt="">
+      <img width="500px" src="imagenes/<?=$producto['imagen']?>" alt="">
     </div>
     <div class="particular">
     <div class="p-5">
-      <h2 class="card-title fs-2 mb-4 text-center"><?=$producto['titulo']?></h2>
+      <h2 class="card-title fs-2 mb-4 text-center"><?=$producto['nombre']?></h2>
       <p class="card-text text-center"><?=$producto['descripcion']?></p>
     </div>
     </div>
