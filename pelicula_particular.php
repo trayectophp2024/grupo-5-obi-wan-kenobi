@@ -30,6 +30,8 @@ $producto = $productos[0] ?? NULL;
     <div class="p-5">
       <h2 class="card-title fs-2 mb-4 text-center"><?=$producto['titulo']?></h2>
       <p class="card-text text-center"><?=$producto['descripcion']?></p>
+      <p class="card-text text-center">Director: <?=$producto['director']?></p>
+      <p class="card-text text-center">Año de estreno: <?=$producto['año_estreno']?></p>
     </div>
     </div>
   </div>

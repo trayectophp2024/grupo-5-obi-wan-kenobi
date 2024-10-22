@@ -24,8 +24,8 @@
     <a href="sables.php?categoria=sables" class="navbar-brand">SABLES</a>
 
     <div class="container-fluid d-flex justify-content-center">
-    <form class="d-flex" role="search">
-      <input class="form-control" type="search" aria-label="Search">
+    <form action="busqueda.php" method="GET" class="d-flex" role="search">
+      <input class="form-control" name="q" type="search" aria-label="Search">
       <div class="input-group">
         <span class="input-group-text">
         <i class="fa-solid fa-magnifying-glass"></i>

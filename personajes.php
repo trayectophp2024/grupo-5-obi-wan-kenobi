@@ -43,7 +43,7 @@
                         <img src="imagenes/<?=$producto['imagen'];?>" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title text-center"><?=$producto['nombre'];?></h5>
-                            <a href="producto_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>" class="btn btn-primary">Ver</a>
+                            <a href="personajes_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>" class="btn btn-primary">Ver</a>
                         </div>
 
                     </div>

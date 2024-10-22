@@ -20,7 +20,7 @@ $producto = $productos[0] ?? NULL;
 
 <?php require "partials/header.php" ?>
 
-<img width="150px" src="imagenes/nave-logo.png" class="rounded-circle mx-auto d-block" alt="...">
+<img width="150px" src="imagenes/personaje.webp" class="rounded-circle mx-auto d-block" alt="...">
 
   <div class="d-flex mb-3">
     <div class="me-auto p-2">
@@ -30,12 +30,6 @@ $producto = $productos[0] ?? NULL;
     <div class="p-5">
       <h2 class="card-title fs-2 mb-4 text-center"><?=$producto['nombre']?></h2>
       <p class="card-text text-center"><?=$producto['descripcion']?></p>
-      <p class="card-text text-center"><?=$producto['tipo']?></p>
-      <p class="card-text text-center"><?=$producto['fabricante']?></p>
-      <p class="card-text text-center"><?=$producto['longitud']?></p>
-      <p class="card-text text-center"><?=$producto['velocidad_maxima']?></p>
-      <p class="card-text text-center"><?=$producto['armamento']?></p>
-      <p class="card-text text-center"><?=$producto['capacidad']?></p>
     </div>
     </div>
   </div>
