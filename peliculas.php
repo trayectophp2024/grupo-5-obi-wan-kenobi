@@ -43,7 +43,7 @@
                     <div class="card" style="width: 18rem;">
                         <img src="imagenes/<?=$producto['imagen'];?>" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="card-title text-center"><?=$producto['titulo'];?></h5>
+                            <h5 class="card-title text-center"><?=$producto['nombre'];?></h5>
                             
                         </div>
 

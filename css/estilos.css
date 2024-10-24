@@ -23,3 +23,26 @@ footer{
     background-color: #E4E0E1;
     border: 2px solid #D6C0B3;
 }
+
+.error{
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+
+.creditos{
+    background-image: url('../imagenes/universo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caja {
+    background-image: url('../imagenes/universo.jpg'); /* Cambia a la ruta de tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra la caja */
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #00000080;
+    color: white; /* Color del texto */
+}

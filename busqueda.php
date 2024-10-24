@@ -26,7 +26,7 @@ if ($termino_busqueda) {
             <?php foreach ($productos as $producto) { ?>
                 <div class="col-4 mt-4 mb-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/<?= $producto['imagen'] ?>" class="card-img-top" alt="">
+                        <img src="imagenes/<?= $producto['imagen'] ?>" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title"><?= $producto['nombre'] ?></h5>
                         </div>

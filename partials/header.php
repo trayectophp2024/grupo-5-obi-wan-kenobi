@@ -24,14 +24,23 @@
     <a href="sables.php?categoria=sables" class="navbar-brand">SABLES</a>
 
     <div class="container-fluid d-flex justify-content-center">
-    <form action="busqueda.php" method="GET" class="d-flex" role="search">
+<!--     <form action="busqueda.php" method="GET" class="d-flex" role="search">
       <input class="form-control" name="q" type="search" aria-label="Search">
       <div class="input-group">
         <span class="input-group-text">
         <i class="fa-solid fa-magnifying-glass"></i>
         </span>
       </div>
-    </form>
+    </form> -->
+
+    <form action="busqueda.php" method="GET" class="d-flex" role="search">
+  <div class="input-group">
+    <input class="form-control" name="q" type="search" aria-label="Search">
+    <span class="input-group-text">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </span>
+  </div>
+</form>
   </div>
 </nav>
 <hr>

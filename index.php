@@ -26,11 +26,13 @@ require_once "utils/db_connection.php";
                 <img class="rounded-circle border border-dark" width="200px" src="imagenes/personaje.webp" alt="">
             </a>
             <a  href="sables.php?categoria=sables" class="d-block mb-5">
-                <img class="rounded-circle border border-dark" width="200px" src="imagenes/sable.jpg" alt="">
+                <img class="rounded-circle border border-dark" width="200px" src="imagenes/sablelogo2.png" alt="">
             </a>
         </div>
     </div>
 </div>
+
+
 
 
 <?php require "partials/footer.php" ?>
