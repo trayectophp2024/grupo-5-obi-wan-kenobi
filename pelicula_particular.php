@@ -20,18 +20,21 @@ $producto = $productos[0] ?? NULL;
 
 <?php require "partials/header.php" ?>
 
-<img src="imagenes/peliculas_portada.jpg" class="rounded-circle mx-auto d-block" alt="...">
+<img src="imagenes/peliculas_portada.jpg" class="rounded-circle mx-auto d-block m-3" alt="...">
 
   <div class="d-flex mb-3">
     <div class="me-auto p-2">
-      <img width="300px" src="imagenes/<?=$producto['imagen']?>" alt="">
+      <img width="400px" src="imagenes/<?=$producto['imagen']?>" alt="">
     </div>
     <div class="particular">
     <div class="p-5">
-      <h2 class="card-title fs-2 mb-4 text-center"><?=$producto['nombre']?></h2>
-      <p class="card-text text-center"><?=$producto['descripcion']?></p>
-      <p class="card-text text-center">Director: <?=$producto['director']?></p>
-      <p class="card-text text-center">Año de estreno: <?=$producto['año_estreno']?></p>
+      <h1 class="card-title mb-4 text-center"><?=$producto['nombre']?></h1>
+      <p class="card-text text-center fs-4"><?=$producto['descripcion']?></p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item fs-5">Director: <?= $producto['director'] ?></li>
+        <li class="list-group-item fs-5">Año de estreno: <?= $producto['año_estreno'] ?></li>
+        <li class="list-group-item fs-5">Duración: <?= $producto['duracion'] ?></li>
+      </ul>
     </div>
     </div>
   </div>

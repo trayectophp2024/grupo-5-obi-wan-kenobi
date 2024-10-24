@@ -20,24 +20,26 @@ $producto = $productos[0] ?? NULL;
 
 <?php require "partials/header.php" ?>
 
-<img width="150px" src="imagenes/nave-logo.png" class="rounded-circle mx-auto d-block" alt="...">
+<img width="150px" src="imagenes/nave-logo.png" class="rounded-circle mx-auto d-block m-3" alt="...">
 
-  <div class="d-flex mb-3">
-    <div class="me-auto p-2">
-      <img width="500px" src="imagenes/<?=$producto['imagen']?>" alt="">
-    </div>
-    <div class="particular">
+<div class="d-flex mb-3">
+  <div class="me-auto p-2">
+    <img width="700px" src="imagenes/<?= $producto['imagen'] ?>" alt="">
+  </div>
+  <div class="particular">
     <div class="p-5">
-      <h2 class="card-title fs-2 mb-4 text-center"><?=$producto['nombre']?></h2>
-      <p class="card-text text-center"><?=$producto['descripcion']?></p>
-      <p class="card-text text-center"><?=$producto['tipo']?></p>
-      <p class="card-text text-center"><?=$producto['fabricante']?></p>
-      <p class="card-text text-center"><?=$producto['longitud']?></p>
-      <p class="card-text text-center"><?=$producto['velocidad_maxima']?></p>
-      <p class="card-text text-center"><?=$producto['armamento']?></p>
-      <p class="card-text text-center"><?=$producto['capacidad']?></p>
-    </div>
+      <h1 class="card-title mb-4 text-center"><?= $producto['nombre'] ?></h1>
+      <p class="card-text text-center fs-4"><?= $producto['descripcion'] ?></p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item fs-5">Tipo: <?= $producto['tipo'] ?></li>
+        <li class="list-group-item fs-5">Fabricante: <?= $producto['fabricante'] ?></li>
+        <li class="list-group-item fs-5">Longitud: <?= $producto['longitud'] ?></li>
+        <li class="list-group-item fs-5">Velocidad Maxima: <?= $producto['velocidad_maxima'] ?></li>
+        <li class="list-group-item fs-5">Armamento: <?= $producto['armamento'] ?></li>
+        <li class="list-group-item fs-5">Capacidad: <?= $producto['capacidad'] ?></li>
+      </ul>
     </div>
   </div>
-  
+</div>
+
 <?php require "partials/footer.php" ?>
