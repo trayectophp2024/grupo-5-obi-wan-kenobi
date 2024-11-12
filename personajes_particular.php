@@ -36,7 +36,7 @@ $producto = $productos[0] ?? NULL;
         <li class="list-group-item fs-5">Planeta Natal: <?= $producto['planeta_natal'] ?></li>
         <li class="list-group-item fs-5">Habilidades: <?= $producto['habilidades'] ?></li>
         <li class="list-group-item fs-5">Arma: <?= $producto['arma'] ?></li>
-        <li class="list-group-item fs-5">Actor: <?= $producto['actor'] ?></li>
+        <li class="list-group-item fs-5">Actor/Actriz: <?= $producto['actor'] ?></li>
       </ul>
     </div>
     </div>

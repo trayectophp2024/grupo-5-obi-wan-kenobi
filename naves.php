@@ -1,32 +1,32 @@
 <?php
 
-    require_once "utils/funciones.php";
-    require_once "utils/db_connection.php";
+require_once "utils/funciones.php";
+require_once "utils/db_connection.php";
 
-        /* Capturamos la tabla que viene por GET (URL) */
+/* Capturamos la tabla que viene por GET (URL) */
 
-        
-        $tabla = $_GET['categoria'] ?? false;
 
-       /* Tablas alidas */
-       $tablas = [
-            'naves' => 'naves',
-            'peliculas' => 'peliculas',
-            'personajes' => 'personajes',
-            'sables' => 'sables'
-       ];
+$tabla = $_GET['categoria'] ?? false;
 
-       /* Comprobar si el array existe */
+/* Tablas alidas */
+$tablas = [
+    'naves' => 'naves',
+    'peliculas' => 'peliculas',
+    'personajes' => 'personajes',
+    'sables' => 'sables'
+];
 
-       if (!array_key_exists($tabla, $tablas)) {
-        header('Location: error404.php');
-       }
+/* Comprobar si el array existe */
 
-        /* Llamar a la funcionm */
+if (!array_key_exists($tabla, $tablas)) {
+    header('Location: error404.php');
+}
 
-        $categorias = listar_todo($conn, $tabla);
+/* Llamar a la funcionm */
 
-        /*  echo "<pre>";
+$categorias = listar_todo($conn, $tabla);
+
+/*  echo "<pre>";
         var_dump($categorias);
         echo "</pre>";  */
 
@@ -35,19 +35,21 @@
 <?php require "partials/header.php" ?>
 
 <main class="container">
-<img width="150px" src="imagenes/nave-logo.png" class="rounded-circle mx-auto d-block" alt="...">
+    <a href="index.php">
+    <img width="150px" src="imagenes/nave-logo.png" class="rounded-circle mx-auto d-block " alt="...">
+    </a>
     <div class="row">
-        <?php foreach($categorias as $producto) { ?>
+        <?php foreach ($categorias as $producto) { ?>
             <div class="col-4 mt-4 mb-4">
-            <a href="naves_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>">
+                <a href="naves_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id'] ?>">
                     <div class="card">
-                        <img src="imagenes/<?=$producto['imagen'];?>" class="card-img-top" alt="">
+                        <img src="imagenes/<?= $producto['imagen']; ?>" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="card-title text-center"><?=$producto['nombre'];?></h5>
+                            <h5 class="card-title text-center"><?= $producto['nombre']; ?></h5>
                         </div>
                     </div>
-                    </a>
-                </div>
+                </a>
+            </div>
         <?php } ?>
     </div>
 

@@ -28,10 +28,10 @@
       <div class="container-fluid d-flex justify-content-center">
         <form action="busqueda.php" method="GET" class="d-flex" role="search">
           <div class="input-group">
-            <input class="form-control" name="q" type="search" aria-label="Search">
-            <span class="input-group-text">
+            <input class="form-control" name="q" type="search" aria-label="Search" maxlength="50" >
+            <button type="submit" class="input-group-text">
               <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+            </button>
           </div>
         </form>
       </div>

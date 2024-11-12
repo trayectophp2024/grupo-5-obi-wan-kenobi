@@ -35,11 +35,13 @@
 <?php require "partials/header.php" ?>
 
 <main class="container">
+    <a href="index.php">
 <img src="imagenes/peliculas_portada.jpg" class="rounded-circle mx-auto d-block" alt="...">
+</a>
     <div class="row">
         <?php foreach($categorias as $producto) { ?>
             <div class="col-4 mt-4 mb-4">
-            <a href="pelicula_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>">
+            <a href="peliculas_particular.php?categorias=<?= $tabla ?>&id=<?= $producto['id']?>">
                     <div class="card">
                         <img src="imagenes/<?=$producto['imagen'];?>" class="card-img-top" alt="">
                         <div class="card-body">

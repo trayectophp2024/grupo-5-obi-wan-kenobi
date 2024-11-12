@@ -35,7 +35,9 @@
 <?php require "partials/header.php" ?>
 
 <main class="container">
+    <a href="index.php">
 <img width="150px" src="imagenes/sablelogo2.png" class="rounded-circle mx-auto d-block" alt="...">
+</a>
     <div class="row">
         <?php foreach($categorias as $producto) { ?>
             <div class="col-4 mt-4 mb-4">

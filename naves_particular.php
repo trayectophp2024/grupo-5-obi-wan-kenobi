@@ -33,8 +33,8 @@ $producto = $productos[0] ?? NULL;
       <ul class="list-group list-group-flush">
         <li class="list-group-item fs-5">Tipo: <?= $producto['tipo'] ?></li>
         <li class="list-group-item fs-5">Fabricante: <?= $producto['fabricante'] ?></li>
-        <li class="list-group-item fs-5">Longitud: <?= $producto['longitud'] ?></li>
-        <li class="list-group-item fs-5">Velocidad Maxima: <?= $producto['velocidad_maxima'] ?></li>
+        <li class="list-group-item fs-5">Longitud: <?= $producto['longitud'] ?> m</li>
+        <li class="list-group-item fs-5">Velocidad Maxima: <?= $producto['velocidad_maxima'] ?> km/h</li>
         <li class="list-group-item fs-5">Armamento: <?= $producto['armamento'] ?></li>
         <li class="list-group-item fs-5">Capacidad: <?= $producto['capacidad'] ?></li>
       </ul>

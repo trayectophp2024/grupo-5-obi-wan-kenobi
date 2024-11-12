@@ -37,22 +37,23 @@ function buscar_productos($conn, $termino_busqueda)
 
     $termino_busqueda = $conn->real_escape_string($termino_busqueda);
 
-    /* Consultas para buscar en la figuras */
+    /* Consultas para buscar en naves*/
     $sqlNaves = "SELECT 'naves' as tabla, id, nombre, descripcion, tipo, fabricante, longitud, velocidad_maxima, armamento, capacidad, imagen FROM naves
         WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
          ";
 
-    /* Consultas para buscar en la monopatin */
+    /* Consultas para buscar en peliculas */
     $sqlPeliculas = "SELECT 'peliculas' as tabla, id, nombre, episodio, descripcion, director, año_estreno, duracion, imagen FROM peliculas
         WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
          ";
 
-    /* Consultas para buscar en la juegosmesa */
+    /* Consultas para buscar en personajes */
     /* El LOWER es para que busque sin importar mayuscula y minuscula */
     $sqlPersonajes = "SELECT 'personajes' as tabla, id, nombre, descripcion, especie, afiliacion, planeta_natal, habilidades, arma, actor, imagen FROM personajes
         WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
          ";
-
+    /* Consultas para buscar en sables */
+    /* El LOWER es para que busque sin importar mayuscula y minuscula */
     $sqlSables = "SELECT 'sables' as tabla, id, nombre, descripcion, color, propietario, afiliacion, cristal, imagen FROM sables
 WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
  ";

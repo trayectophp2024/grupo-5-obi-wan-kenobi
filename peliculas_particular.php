@@ -33,7 +33,7 @@ $producto = $productos[0] ?? NULL;
       <ul class="list-group list-group-flush">
         <li class="list-group-item fs-5">Director: <?= $producto['director'] ?></li>
         <li class="list-group-item fs-5">Año de estreno: <?= $producto['año_estreno'] ?></li>
-        <li class="list-group-item fs-5">Duración: <?= $producto['duracion'] ?></li>
+        <li class="list-group-item fs-5">Duración: <?= $producto['duracion'] ?> minutos</li>
       </ul>
     </div>
     </div>
