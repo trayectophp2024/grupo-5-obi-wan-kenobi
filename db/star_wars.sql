@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-10-2024 a las 20:07:23
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 12-11-2024 a las 19:38:45
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -89,7 +89,7 @@ INSERT INTO `peliculas` (`id`, `nombre`, `episodio`, `descripcion`, `director`, 
 (7, 'Star Wars: Episode VII - The Force Awakens', 7, 'Ambientada 30 años después de la caída del Imperio, \"El Despertar de la Fuerza\" introduce a una nueva generación de héroes en la lucha contra la Primera Orden, una organización que busca continuar el legado de Darth Vader. Rey, una chatarrera de Jakku, descubre su conexión con la Fuerza y busca a Luke Skywalker, el último Jedi, para que la entrene.', 'J.J. Abrams', 2015, 138, 'episodio7.png'),
 (8, 'Star Wars: Episode VIII - The Last Jedi', 8, 'En \"Los Últimos Jedi\", Rey busca entrenamiento de Luke Skywalker, quien ha exiliado a sí mismo tras la caída de su intento de reconstruir la Orden Jedi. Mientras tanto, la Resistencia lucha por sobrevivir contra la Primera Orden. La película explora temas de legado, redención, y el conflicto entre la luz y la oscuridad dentro de Rey y Kylo Ren.', 'Rian Johnson', 2017, 152, 'episodio8.png'),
 (9, 'Star Wars: Episode IX - The Rise of Skywalker', 9, 'La conclusión de la saga Skywalker, \"El Ascenso de Skywalker\" sigue a Rey, Finn y Poe mientras se enfrentan a la amenaza final del Emperador Palpatine, quien ha regresado de las sombras para liderar la Primera Orden. Rey descubre la verdad sobre su linaje y enfrenta su destino en una batalla épica por el futuro de la galaxia.', 'J.J. Abrams', 2019, 142, 'episodio9.png'),
-(10, 'Rogue One: A Star Wars Story', NULL, 'Rogue One\" narra la historia del grupo de rebeldes que roba los planos de la primera Estrella de la Muerte, evento que se menciona en \"Una Nueva Esperanza\". Liderados por Jyn Erso, los rebeldes arriesgan sus vidas en una misión suicida para asegurar la victoria de la Alianza Rebelde. La película destaca por su tono más oscuro y su enfoque en los sacrificios hechos por aquellos que luchan contra el Imperio.', 'Gareth Edwards', 2016, 133, 'rogue-one.png');
+(10, 'Rogue One: A Star Wars Story', NULL, '\"Rogue One\" narra la historia del grupo de rebeldes que roba los planos de la primera Estrella de la Muerte, evento que se menciona en \"Una Nueva Esperanza\". Liderados por Jyn Erso, los rebeldes arriesgan sus vidas en una misión suicida para asegurar la victoria de la Alianza Rebelde. La película destaca por su tono más oscuro y su enfoque en los sacrificios hechos por aquellos que luchan contra el Imperio.', 'Gareth Edwards', 2016, 133, 'rogue-one.png');
 
 -- --------------------------------------------------------
 
